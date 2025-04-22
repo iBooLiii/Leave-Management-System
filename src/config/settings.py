@@ -1,4 +1,5 @@
-﻿from pathlib import Path
+from pathlib import Path
+from src.templates.templates_setting import TEMPLATES
 
 # 基本路徑設定
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -33,22 +34,6 @@ MIDDLEWARE = [
 
 # 路由設定
 ROOT_URLCONF = 'src.config.urls'
-
-# 模板引擎設定
-TEMPLATES = [
-    {
-        'BACKEND': 'django.template.backends.django.DjangoTemplates',  
-        'APP_DIRS': True,  
-        'OPTIONS': {
-            'context_processors': [
-                'django.template.context_processors.debug',    
-                'django.template.context_processors.request',  
-                'django.contrib.auth.context_processors.auth',  
-                'django.contrib.messages.context_processors.messages',  
-            ],
-        },
-    },
-]
 
 # 資料庫設定
 DATABASES = {
