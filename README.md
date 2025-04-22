@@ -30,13 +30,15 @@ leave-management-system/
 │   │   ├── settings.py
 │   │   ├── urls.py
 │   │   └── wsgi.py
-│   ├─ leave/
+leave/
 │   │   ├── __init__.py
 │   │   ├── admin.py
 │   │   ├── models.py
 │   │   ├── serializers.py
 │   │   ├── urls.py
 │   │   ├── views.py
+│   ├─ templates/
+│   │   ├── templates_setting.py
 │   ├─ __init__.py
 ├─ requirements.txt
 ├─ README.md
